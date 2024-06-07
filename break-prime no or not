@@ -11,6 +11,13 @@ int main() {
             break;
         }
     }
-        printf("%d\n",i);
+     if(c==0)
+     {
+         printf("Prime no");
+     }
+     else
+     {
+         printf("Not a prime no");
+     }
         return 0;
 }
