@@ -1,0 +1,22 @@
+#include <stdio.h>
+void show()
+{
+    printf("Vignan\n");
+}
+void line()
+{
+    printf("------\n");
+}
+int main()
+{
+    line();
+    show();
+    line();
+  return 0;
+}
+
+
+output:
+------
+Vignan
+------
