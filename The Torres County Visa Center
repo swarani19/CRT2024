@@ -1,0 +1,22 @@
+#include <stdio.h>
+int main() 
+{
+    int applicantID, token = 0, placeValue = 1;
+    scanf("%d", &applicantID);
+    while (applicantID > 0) 
+    {
+        int digit = applicantID % 10;
+        if (digit % 2 == 0)
+        {
+            token += (digit + 1) * placeValue;
+        } 
+        else
+        {
+            token += (digit - 1) * placeValue;
+        }
+        placeValue *= 10;
+        applicantID /= 10;
+    }
+    printf("%d", token);
+    return 0;
+}
