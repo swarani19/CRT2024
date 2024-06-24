@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main()
+{
+    int barcode, smallest = 9;
+    scanf("%d", &barcode);
+    while (barcode > 0)
+    {
+        int digit = barcode % 10;
+        if (digit < smallest) 
+        {
+            smallest = digit;
+        }
+        barcode /= 10;
+    }
+    printf("%d", smallest);  
+    return 0;
+}
