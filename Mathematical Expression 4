@@ -1,0 +1,36 @@
+import java.io.*;
+import java.util.*;
+public class Solution 
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int t=sc.nextInt();
+        for(int i=1;i<=t;i++)
+        {
+            int a=sc.nextInt();
+            char ch=sc.next().charAt(0);
+            int b=sc.nextInt();
+            sc.next().charAt(0);
+            int c=sc.nextInt();  
+            switch(ch) 
+            {
+                case '+':if(a+b==c)
+                    System.out.println("Yes");
+                    else
+                        System.out.println(a+b);
+                    break;
+                case '-':if(a-b==c)
+                    System.out.println("Yes");
+                    else
+                        System.out.println(a-b);
+                    break;
+                case '*':if(a*b==c)
+                    System.out.println("Yes");
+                    else
+                        System.out.println(a*b);
+                    break;
+            }
+        }
+    }
+}
