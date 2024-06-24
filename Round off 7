@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+     float x;
+    scanf("%f",&x);
+    float r1=ceil(x);
+    float r2=floor(x);
+    printf("%.f\n%.1f\n%.1f",x,r1,r2);
+    
+    return 0;
+}
